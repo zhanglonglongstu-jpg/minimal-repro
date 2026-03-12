@@ -1,19 +1,4 @@
-{
-  "name": "my-screensaver-product",
-  "version": "1.0.0",
-  "description": "我的炫酷网页屏保",
-  "main": "main.js",
-  "author": "zst",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder --win"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "electron": "^40.6.1",
-    "electron-builder": "^24.13.3"
-  },
-  "build": {
+"build": {
     "appId": "com.yourbrand.screensaver",
     "productName": "梦幻流体屏保",
     "directories": {
@@ -22,15 +7,11 @@
     "win": {
       "target": [
         "nsis"
-      ],
-      "icon": "icon.ico"
+      ]
     },
     "nsis": {
       "oneClick": true,
       "allowToChangeInstallationDirectory": false,
-      "createDesktopShortcut": true,
-      "installerIcon": "icon.ico",
-      "uninstallerIcon": "icon.ico"
+      "createDesktopShortcut": true
     }
   }
-}
