@@ -13,12 +13,10 @@ jobs:
     steps:
       - name: Check out git repository
         uses: actions/checkout@v4
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-
+          node-version: 24  # 改成 24，警告就消失了
       - name: Install dependencies
         run: npm install
 
